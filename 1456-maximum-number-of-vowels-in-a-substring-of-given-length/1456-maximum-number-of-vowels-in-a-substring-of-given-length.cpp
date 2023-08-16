@@ -10,7 +10,6 @@ public:
         }
         
         int res = v;
-        // sliding widnow invariant: [end -k, k) is the window and it has v vowels
         while(end < s.size()) {
             if(vowel.count(s[end - k]) > 0) --v;
             if(vowel.count(s[end]) > 0) {
